@@ -1,0 +1,122 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+p {
+    line-height: 1.3em;
+}
+
+header {
+    height: 80px;
+    padding-top: 20px;
+}
+
+section {
+    margin-top: 10px;
+    padding: 0 10px 0 10px;
+}
+
+.menuItem {
+    width: 100%;
+    background-color: rgb(232, 234, 236);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.itemTitle {
+    position: relative;
+    float: right;
+    top: 0px;
+    right: 0px;
+    height: 50px;
+    min-width: 30%;
+    text-align: center;
+    border-radius: 0 10px 0 0;
+}
+
+.itemContent {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 0 5% 5% 5%;
+    margin-top: 15px;
+    clear: right;
+}
+
+.row {
+    width: 100%;
+    position: relative;
+    padding: 0px 10px 0px 10px;
+}
+
+.bgColor-Red {
+    background-color: rgb(153, 21, 21);
+}
+
+.bgColor-Yellow {
+    background-color: rgb(235, 176, 13);
+}
+
+.bgColor-Blue {
+    background-color: rgb(43, 88, 221);
+}
+
+.textColor-White {
+    color: #fff;
+}
+
+.clear {
+    clear: both;
+}
+
+/*********************************
+    Desktop
+*********************************/
+@media (min-width: 992px)
+{
+    section {
+        float: left;
+        width: 33.33%;
+        min-height: 200px;
+    }
+}
+  
+/*********************************
+    Tablet
+*********************************/
+@media (min-width: 768px) and (max-width: 991px)
+{
+    section {
+        float: left;
+        width: 50%;
+        height: 100%;
+        padding-top: 10px;
+        /* margin-bottom: 10px; */
+    }
+
+    .grow {
+        width: 100%;
+    }
+}
+
+/****************************
+Mobile
+****************************/
+@media(max-width: 767px){
+    section {
+        float: left;
+        width: 100%;
+        padding-top: 10px;
+    }
+}
